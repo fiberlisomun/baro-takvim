@@ -6,184 +6,194 @@ METHOD:PUBLISH
 X-WR-CALNAME:İstanbul Barosu Etkinlikleri
 X-WR-TIMEZONE:Europe/Istanbul
 BEGIN:VEVENT
-UID:fdf0e701-1167-4dec-9373-06c158381e22-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:50ce7043-27ab-430b-8dca-47102320e38a-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260905T150000Z
 DTEND:20260905T170000Z
 SUMMARY:ADLİ YILI BİRLİKTE AÇIYORUZ!
-DESCRIPTION:Sitedeki Tarih: 5 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/adli-yili-birlikte-aciyoruz
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/adli-yili-birlikte-aciyoruz
 URL:https://istanbulbarosu.org.tr/etkinlikler/adli-yili-birlikte-aciyoruz
 END:VEVENT
 BEGIN:VEVENT
-UID:75afe7a6-fcc3-4ff4-9649-35ed263363df-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:3c342d6e-da7f-4846-a906-14163b55938a-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260907T143000Z
 DTEND:20260907T163000Z
 SUMMARY:TAHKİMDE AVUKATLIK VE TAHKİM TÜRLERİ
-DESCRIPTION:Sitedeki Tarih: 7 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/tahkimde-avukatlik-ve-tahkim-turleri
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/tahkimde-avukatlik-ve-tahkim-turleri
 URL:https://istanbulbarosu.org.tr/etkinlikler/tahkimde-avukatlik-ve-tahkim-turleri
 END:VEVENT
 BEGIN:VEVENT
-UID:20254b65-7d79-4835-a3f0-7b56f7484f40-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:082ff0b7-6cb8-43f4-8e82-30e1002d2764-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260908T160000Z
 DTEND:20260908T180000Z
 SUMMARY:DOSYANI AL GEL
-DESCRIPTION:Sitedeki Tarih: 8 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/dosyani-al-gel-3
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/dosyani-al-gel-3
 URL:https://istanbulbarosu.org.tr/etkinlikler/dosyani-al-gel-3
 LOCATION:İstanbul Barosu CMK Binası
 END:VEVENT
 BEGIN:VEVENT
-UID:f9d88635-30e1-4aed-8299-e53175bc84f7-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:e45138b1-b1c2-4263-b5ef-431901dfd7e8-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260910T163000Z
 DTEND:20260910T183000Z
 SUMMARY:İSTANBUL BAROSU TÜRK HALK MÜZİĞİ TOPLULUĞU YENİ DÖNEM ÇALIŞMALARINA BAŞLIYOR
-DESCRIPTION:Sitedeki Tarih: 10 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/istanbul-barosu-turk-halk-muzigi-toplulugu-yeni-donem-calismalarina-basliyor
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/istanbul-barosu-turk-halk-muzigi-toplulugu-yeni-donem-calismalarina-basliyor
 URL:https://istanbulbarosu.org.tr/etkinlikler/istanbul-barosu-turk-halk-muzigi-toplulugu-yeni-donem-calismalarina-basliyor
 LOCATION:İstanbul Barosu Kültür Merkezi
 END:VEVENT
 BEGIN:VEVENT
-UID:d85b47f4-e7e8-4921-b6b2-aa9c29a9163b-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:f13b5823-8f57-42c3-a957-19edcf53ecae-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260914T210000Z
 DTEND:20260914T230000Z
 SUMMARY:MAKALE ÇAĞRISI
-DESCRIPTION:Sitedeki Tarih: 15 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/makale-cagrisi
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/makale-cagrisi
 URL:https://istanbulbarosu.org.tr/etkinlikler/makale-cagrisi
 END:VEVENT
 BEGIN:VEVENT
-UID:f88a42eb-8441-418f-a3e5-f0fb1b0eacdf-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:86dc486d-2b6f-468a-abf7-d1e69155a71b-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260915T160000Z
 DTEND:20260915T180000Z
 SUMMARY:MARKA DEĞERLEMESİ VE YÖNTEMLERİ
-DESCRIPTION:Sitedeki Tarih: 15 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/marka-degerlemesi-ve-yontemleri
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/marka-degerlemesi-ve-yontemleri
 URL:https://istanbulbarosu.org.tr/etkinlikler/marka-degerlemesi-ve-yontemleri
 LOCATION:Zoom üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:122dcc9f-1170-4300-977b-6663dbc783f6-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:c8e8734b-be69-4a79-a3f9-06781fef2568-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260915T163000Z
 DTEND:20260915T183000Z
 SUMMARY:AVUKAT YAZAR SÖYLEŞİLERİ
-DESCRIPTION:Sitedeki Tarih: 15 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/avukat-yazar-soylesileri-1
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/avukat-yazar-soylesileri-1
 URL:https://istanbulbarosu.org.tr/etkinlikler/avukat-yazar-soylesileri-1
 LOCATION:CMK 1.Kat Toplantı Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:dfb9c413-47ad-47d2-a318-047e79ccff5e-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:df7cd0d5-d86f-4fea-9fa1-38bd310dd7de-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260916T160000Z
 DTEND:20260916T180000Z
 SUMMARY:BOŞANMA HUKUKUNDA HUKUKA AYKIRI DELİLLER
-DESCRIPTION:Sitedeki Tarih: 16 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/bosanma-hukukunda-hukuka-aykiri-deliller
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/bosanma-hukukunda-hukuka-aykiri-deliller
 URL:https://istanbulbarosu.org.tr/etkinlikler/bosanma-hukukunda-hukuka-aykiri-deliller
 LOCATION:İstanbul Barosu Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:b97b77e7-1fdb-4212-86d0-e7370af8e254-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:9d58ae5a-8f0d-4ad9-bca5-f687ba58405d-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260917T160000Z
 DTEND:20260917T180000Z
 SUMMARY:KENT HAKKI PERSPEKTİFİNDEN İSTANBUL'UN BOSTANLARI: DÜNÜ\, BUGÜNÜ\, GELECEĞİ
-DESCRIPTION:Sitedeki Tarih: 17 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/kent-hakki-perspektifinden-istanbulun-bostanlari-dunu-bugunu-gelecegi
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/kent-hakki-perspektifinden-istanbulun-bostanlari-dunu-bugunu-gelecegi
 URL:https://istanbulbarosu.org.tr/etkinlikler/kent-hakki-perspektifinden-istanbulun-bostanlari-dunu-bugunu-gelecegi
 END:VEVENT
 BEGIN:VEVENT
-UID:932e6b6e-99fe-484f-9d22-2e8dc8858239-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:d7308a64-7f51-476d-ad55-b88014278611-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260919T110000Z
 DTEND:20260919T130000Z
 SUMMARY:OLAY YERİNDEN DURUŞMA SALONUNA MİNNESOTA PROTOKOLÜ UYGULAMASI
-DESCRIPTION:Sitedeki Tarih: 19 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/olay-yerinden-durusma-salonuna-minnesota-protokolu-uygulamasi
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/olay-yerinden-durusma-salonuna-minnesota-protokolu-uygulamasi
 URL:https://istanbulbarosu.org.tr/etkinlikler/olay-yerinden-durusma-salonuna-minnesota-protokolu-uygulamasi
 LOCATION:İStanbul Barosu Kültür Merkezi Galata
 END:VEVENT
 BEGIN:VEVENT
-UID:31f39973-895b-4acc-bebc-d5ad27d49649-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:88012df2-3735-487a-b8f0-dceed825aa4a-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260919T170000Z
 DTEND:20260919T190000Z
 SUMMARY:TİYATRO: YAŞAR NE YAŞAR NE YAŞAMAZ
-DESCRIPTION:Sitedeki Tarih: 19 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/tiyatro-yasar-ne-yasar-ne-yasamaz
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/tiyatro-yasar-ne-yasar-ne-yasamaz
 URL:https://istanbulbarosu.org.tr/etkinlikler/tiyatro-yasar-ne-yasar-ne-yasamaz
 LOCATION:İstanbul Barosu Merkez Bina / Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:f543c600-5153-48c9-b29a-81dc7b0a706b-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:1bb62f54-9e21-4b5d-8399-5c8a0a52a3ac-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260924T093000Z
 DTEND:20260924T113000Z
 SUMMARY:BASIN TOPLANTISINA ÇAĞRI
-DESCRIPTION:Sitedeki Tarih: 24 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/basin-toplantisina-cagri
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/basin-toplantisina-cagri
 URL:https://istanbulbarosu.org.tr/etkinlikler/basin-toplantisina-cagri
 END:VEVENT
 BEGIN:VEVENT
-UID:d9b396c1-0bb0-4cb7-998f-a59e203adb3d-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:98313349-4bee-4bda-8f00-7aad5da0f1a7-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260924T140000Z
 DTEND:20260924T160000Z
 SUMMARY:UYUŞMAZLIK ÇÖZÜM YOLLARINDA AVUKATLIK
-DESCRIPTION:Sitedeki Tarih: 24 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/uyusmazlik-cozum-yollarinda-avukatlik
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/uyusmazlik-cozum-yollarinda-avukatlik
 URL:https://istanbulbarosu.org.tr/etkinlikler/uyusmazlik-cozum-yollarinda-avukatlik
 END:VEVENT
 BEGIN:VEVENT
-UID:0dd22823-8b55-410a-b61d-9f639e43f03a-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:f2a5afb7-6cd1-4684-bd80-0eadcb628fff-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260925T163000Z
 DTEND:20260925T183000Z
 SUMMARY:ŞİDDETİN KUŞAKLARARASI AKTARIMI ÜZERİNE BİR SÖYLEŞİ: PSİKANALİTİK YAKLAŞIM\, HUKUK VE EDEBİYAT PERSPEKTİFİNDEN
-DESCRIPTION:Sitedeki Tarih: 25 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/siddetin-kusaklararasi-aktarimi-uzerine-bir-soylesi-psikanalitik-yaklasim-hukuk-ve-edebiyat-perspektifinden
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/siddetin-kusaklararasi-aktarimi-uzerine-bir-soylesi-psikanalitik-yaklasim-hukuk-ve-edebiyat-perspektifinden
 URL:https://istanbulbarosu.org.tr/etkinlikler/siddetin-kusaklararasi-aktarimi-uzerine-bir-soylesi-psikanalitik-yaklasim-hukuk-ve-edebiyat-perspektifinden
 LOCATION:İstanbul Barosu 6. Kat Toplantı Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:31ffdeba-c353-403b-9249-bc34631b6dc6-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:4a61db9a-4d3c-43ba-be98-10c3399812dd-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260926T060000Z
 DTEND:20260926T080000Z
 SUMMARY:KADIN HAKLARI VE KADINA YÖNELİK ŞİDDET KONULU SERTİFİKA PROGRAMI
-DESCRIPTION:Sitedeki Tarih: 26 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/kadin-haklari-ve-kadina-yonelik-siddet-konulu-sertifika-programi-2
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/kadin-haklari-ve-kadina-yonelik-siddet-konulu-sertifika-programi-2
 URL:https://istanbulbarosu.org.tr/etkinlikler/kadin-haklari-ve-kadina-yonelik-siddet-konulu-sertifika-programi-2
 LOCATION:İstanbul Barosu Eğitim\, Araştırma ve Uygulama Merkezi
 END:VEVENT
 BEGIN:VEVENT
-UID:2ba07b6f-c185-4701-b337-c2e07603ea45-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:4a61db9a-4d3c-43ba-be98-10c3399812dd-day1@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
+DTSTART:20260927T060000Z
+DTEND:20260927T080000Z
+SUMMARY:KADIN HAKLARI VE KADINA YÖNELİK ŞİDDET KONULU SERTİFİKA PROGRAMI
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/kadin-haklari-ve-kadina-yonelik-siddet-konulu-sertifika-programi-2
+URL:https://istanbulbarosu.org.tr/etkinlikler/kadin-haklari-ve-kadina-yonelik-siddet-konulu-sertifika-programi-2
+LOCATION:İstanbul Barosu Eğitim\, Araştırma ve Uygulama Merkezi
+END:VEVENT
+BEGIN:VEVENT
+UID:a4b7612b-3ad3-4ca9-aad4-65bbbc530213-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260926T070000Z
 DTEND:20260926T090000Z
 SUMMARY:TÜRKİYE'DE DAVA ŞARTI ARABULUCULUK VE TAHKİM 2026
-DESCRIPTION:Sitedeki Tarih: 26 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/turkiyede-dava-sarti-arabuluculuk-ve-tahkim-2026
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/turkiyede-dava-sarti-arabuluculuk-ve-tahkim-2026
 URL:https://istanbulbarosu.org.tr/etkinlikler/turkiyede-dava-sarti-arabuluculuk-ve-tahkim-2026
 END:VEVENT
 BEGIN:VEVENT
-UID:59f21a36-7436-47eb-8afb-ab422b46c4ba-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:bddc2c45-6386-4f2f-ad69-142b39ccd656-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260926T100000Z
 DTEND:20260926T120000Z
 SUMMARY:YAPAY ZEKA EYLEM PLANI VE GÜNCEL GELİŞMELER
-DESCRIPTION:Sitedeki Tarih: 26 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/yapay-zeka-eylem-plani-ve-guncel-gelismeler
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/yapay-zeka-eylem-plani-ve-guncel-gelismeler
 URL:https://istanbulbarosu.org.tr/etkinlikler/yapay-zeka-eylem-plani-ve-guncel-gelismeler
 END:VEVENT
 BEGIN:VEVENT
-UID:de2abe14-797a-49a7-b5e9-68a4c17d9546-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:f1559cde-b588-419a-96cb-0726e90d76a9-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260926T173000Z
 DTEND:20260926T193000Z
 SUMMARY:ODA ORKESTRASI ADLİ YIL AÇILIŞ KONSERİ
-DESCRIPTION:Sitedeki Tarih: 26 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/oda-orkestrasi-adli-yil-acilis-konseri
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/oda-orkestrasi-adli-yil-acilis-konseri
 URL:https://istanbulbarosu.org.tr/etkinlikler/oda-orkestrasi-adli-yil-acilis-konseri
 LOCATION:İstanbul Barosu Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:7e987435-2fc4-4759-9258-5a541c227a75-day0@istanbulbarosu.org.tr
-DTSTAMP:20260922T145446Z
+UID:9d743bbf-11d5-4607-99eb-5b3ff4f17c50-day0@istanbulbarosu.org.tr
+DTSTAMP:20260922T145750Z
 DTSTART:20260929T160000Z
 DTEND:20260929T180000Z
 SUMMARY:SUÇA SÜRÜKLENEN ÇOCUKTAN ADLİ SÜREÇTEKİ ÇOCUĞA: GÜNCEL GELİŞMELER IŞIĞINDA DEĞİŞİNLER VE DEĞİŞMEYENLER
-DESCRIPTION:Sitedeki Tarih: 29 Eylül 2026\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/suca-suruklenen-cocuktan-adli-surecteki-cocuga-guncel-gelismeler-isiginda-degisinler-ve-degismeyenler
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/suca-suruklenen-cocuktan-adli-surecteki-cocuga-guncel-gelismeler-isiginda-degisinler-ve-degismeyenler
 URL:https://istanbulbarosu.org.tr/etkinlikler/suca-suruklenen-cocuktan-adli-surecteki-cocuga-guncel-gelismeler-isiginda-degisinler-ve-degismeyenler
 END:VEVENT
 END:VCALENDAR
