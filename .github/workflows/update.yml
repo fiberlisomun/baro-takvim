@@ -2,7 +2,7 @@ name: Baro Takvimini Guncelle
 
 on:
   schedule:
-    - cron: "0 0 1,15 * *" 
+    - cron: "0 0 * * *" # Her gece Türkiye saatiyle 03:00'te çalışır
   workflow_dispatch: 
 
 permissions:
