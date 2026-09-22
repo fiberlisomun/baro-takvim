@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import uuid
+import re
+import time
 
 def create_ics(events):
     lines = [
@@ -16,21 +18,17 @@ def create_ics(events):
     
     for event in events:
         try:
-            # Sitenin datetime formatı: 2026-09-26T06:00:00.000Z
             dt_start = datetime.strptime(event['datetime'], "%Y-%m-%dT%H:%M:%S.%fZ")
-            
             base_uid = str(uuid.uuid4())
             extra_days = event.get('extra_days', 0)
             
             for i in range(extra_days + 1):
                 lines.append("BEGIN:VEVENT")
                 
-                # Her gün için farklı UID
                 current_uid = f"{base_uid}-day{i}@istanbulbarosu.org.tr"
                 lines.append(f"UID:{current_uid}")
                 lines.append(f"DTSTAMP:{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}")
                 
-                # O günkü başlangıç ve bitiş
                 current_start = dt_start + timedelta(days=i)
                 current_end = current_start + timedelta(hours=2)
                 
@@ -41,10 +39,7 @@ def create_ics(events):
                 lines.append(f"SUMMARY:{title}")
                 
                 url = f"https://istanbulbarosu.org.tr{event['url']}"
-                
-                # Sitedeki orijinal tarihi de açıklamaya ekleyelim
-                display_date = event.get('display_date_text', '')
-                desc_text = f"Sitedeki Tarih: {display_date}\\nDetaylar için tıklayın: {url}"
+                desc_text = f"Detaylar için tıklayın: {url}"
                 lines.append(f"DESCRIPTION:{desc_text}")
                 lines.append(f"URL:{url}")
                 
@@ -63,12 +58,15 @@ def create_ics(events):
 def update_calendar():
     base_url = "https://istanbulbarosu.org.tr/etkinlikler"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
     
     all_events = []
     page = 1
     print("Baro'nun etkinlik sayfaları taranıyor...")
+    
+    # Ay isimlerini tanıyıp sadece tarihleri filtreleyen regex yapısı
+    aylar = "ocak|şubat|mart|nisan|mayıs|haziran|temmuz|ağustos|eylül|ekim|kasım|aralık"
     
     while True:
         url = f"{base_url}?page={page}"
@@ -92,36 +90,9 @@ def update_calendar():
             h3_tag = a_tag.find('h3')
             event_data['title'] = h3_tag.text.strip() if h3_tag else "İsimsiz Etkinlik"
             
-            # ANA DEĞİŞİKLİK BURASI
             time_tag = a_tag.find('time')
             if time_tag and time_tag.has_attr('datetime'):
                 event_data['datetime'] = time_tag['datetime']
-                
-                # Bazı etkinliklerde (Sertifika programı gibi) başlığın içinde veya hemen 
-                # altında küçük bir yazıyla asıl tarih yazar (örn. "26 - 27 Eylül"). 
-                # Biz kartın (a_tag) içindeki tüm metinleri arayıp, içinde "-" olan 
-                # çok günlük tarihleri tespit edeceğiz.
-                
-                full_text = a_tag.text.lower()
-                extra_days = 0
-                
-                # "26-27" veya "26 - 27" formatını arayan regex
-                import re
-                match = re.search(r'(\d{1,2})\s*-\s*(\d{1,2})', full_text)
-                if match:
-                    day1 = int(match.group(1))
-                    day2 = int(match.group(2))
-                    if day2 > day1:
-                        extra_days = day2 - day1
-                    else:
-                        extra_days = 1 # Aydan aya sarkma (30-1 gibi)
-                        
-                event_data['extra_days'] = extra_days
-                event_data['display_date_text'] = time_tag.text.strip() # Sadece ilk günü alır
-                
-                # EĞER METİNDE ÇOK GÜNLÜK BİR İFADE BULUNDUYSA, EKRANA YAZDIR
-                if extra_days > 0:
-                    print(f"Çok günlük etkinlik bulundu: {event_data['title']} ({extra_days+1} gün)")
             else:
                 continue 
                 
@@ -132,6 +103,31 @@ def update_calendar():
                     loc_text = parent_div.text.strip()
                     if loc_text:
                         event_data['location'] = loc_text
+            
+            # --- DERİN TARAMA KISMI (Etkinliğin içine girip okuma) ---
+            event_data['extra_days'] = 0
+            if event_data['url']:
+                detail_url = f"https://istanbulbarosu.org.tr{event_data['url']}"
+                try:
+                    detail_response = requests.get(detail_url, headers=headers)
+                    if detail_response.status_code == 200:
+                        detail_soup = BeautifulSoup(detail_response.text, 'html.parser')
+                        detail_text = detail_soup.text.lower()
+                        
+                        # Etkinlik sayfasında "26-27 eylül" formatında bir tarih ara
+                        match = re.search(fr'(\d{{1,2}})\s*-\s*(\d{{1,2}})\s*({aylar})', detail_text)
+                        if match:
+                            day1 = int(match.group(1))
+                            day2 = int(match.group(2))
+                            # Mantıksal hata olmaması için aralığın 10 günden kısa olduğunu doğrula
+                            if day2 > day1 and (day2 - day1) <= 10:
+                                event_data['extra_days'] = day2 - day1
+                                print(f"Çok günlük etkinlik bulundu (Detay sayfasından): {event_data['title']} ({event_data['extra_days'] + 1} gün)")
+                except Exception as e:
+                    print(f"Detay sayfası okunamadı: {e}")
+            
+            # Baro'nun sunucusunu yormamak için çok hafif bir bekleme süresi
+            time.sleep(0.5)
             
             all_events.append(event_data)
         page += 1
