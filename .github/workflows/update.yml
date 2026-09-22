@@ -5,16 +5,20 @@ on:
     - cron: "0 0 1,15 * *" # Her ayın 1'inde ve 15'inde çalışır
   workflow_dispatch: # İstediğinizde manuel tetiklemek için
 
+# BOT İÇİN YAZMA İZNİ (Exit code 128 hatasını çözer)
+permissions:
+  contents: write 
+
 jobs:
   update-calendar:
     runs-on: ubuntu-latest
 
     steps:
       - name: Repoyu Klonla
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Node uyarılarını çözmek için v4 yapıldı
 
       - name: Python Kur
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # Node uyarılarını çözmek için v5 yapıldı
         with:
           python-version: '3.x'
 
