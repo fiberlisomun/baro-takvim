@@ -1,44 +1,127 @@
 import requests
-from datetime import datetime
-import calendar
+from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
+import uuid
+
+def create_ics(events):
+    """Toplanan etkinlikleri ICS formatına dönüştürür"""
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Istanbul Barosu//Etkinlik Takvimi//TR",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        "X-WR-CALNAME:İstanbul Barosu Etkinlikleri",
+        "X-WR-TIMEZONE:Europe/Istanbul"
+    ]
+    
+    for event in events:
+        lines.append("BEGIN:VEVENT")
+        lines.append(f"UID:{uuid.uuid4()}@istanbulbarosu.org.tr")
+        lines.append(f"DTSTAMP:{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}")
+        
+        # Zaman hesaplaması (Etkinliklerin genelde 2 saat sürdüğünü varsayıyoruz)
+        try:
+            # Örnek format: 2026-10-01T10:30:00.000Z
+            dt_start = datetime.strptime(event['datetime'], "%Y-%m-%dT%H:%M:%S.%fZ")
+            dt_end = dt_start + timedelta(hours=2)
+            
+            lines.append(f"DTSTART:{dt_start.strftime('%Y%m%dT%H%M%SZ')}")
+            lines.append(f"DTEND:{dt_end.strftime('%Y%m%dT%H%M%SZ')}")
+        except ValueError:
+            # Eğer saat formatı farklıysa atla
+            continue
+            
+        # Başlık ve Açıklama (Güvenli format)
+        title = event['title'].replace(",", "\\,").replace(";", "\\;").replace("\n", " ")
+        lines.append(f"SUMMARY:{title}")
+        
+        url = f"https://istanbulbarosu.org.tr{event['url']}"
+        desc = f"Detaylar için tıklayın: {url}"
+        lines.append(f"DESCRIPTION:{desc}")
+        lines.append(f"URL:{url}")
+        
+        # Konum (varsa)
+        if event.get('location'):
+            loc = event['location'].replace(",", "\\,").replace(";", "\\;").replace("\n", " ")
+            lines.append(f"LOCATION:{loc}")
+            
+        lines.append("END:VEVENT")
+        
+    lines.append("END:VCALENDAR")
+    return "\n".join(lines)
 
 def update_calendar():
-    # Şu anki yılı ve ayı al
-    now = datetime.now()
-    year = now.year
-    month = now.month
-
-    # O ayın kaç gün sürdüğünü bul (örn: Eylül için 30, Ekim için 31)
-    _, last_day = calendar.monthrange(year, month)
-
-    # Başlangıç ve bitiş tarihlerini Baro'nun istediği formatta oluştur
-    start_date = f"{year}-{month:02d}-01"
-    end_date = f"{year}-{month:02d}-{last_day:02d}"
-
-    # Baro'nun doğrudan ics dosyasını üreten gizli API linki
-    download_url = f"https://istanbulbarosu.org.tr/api/events/export?startDate={start_date}&endDate={end_date}"
-    
-    print(f"Takvim şu adresten indiriliyor: {download_url}")
-
-    HEADERS = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Accept": "text/calendar"
+    base_url = "https://istanbulbarosu.org.tr/etkinlikler"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
-
-    try:
-        # Dosyayı indir
-        response = requests.get(download_url, headers=HEADERS)
+    
+    all_events = []
+    page = 1
+    
+    print("Baro'nun etkinlik sayfaları taranıyor...")
+    
+    while True:
+        url = f"{base_url}?page={page}"
+        print(f"Taranıyor: Sayfa {page}")
         
-        # Eğer indirme başarılıysa (200 OK) ve içi boş değilse
-        if response.status_code == 200 and len(response.content) > 100:
-            with open("baro_takvim.ics", "wb") as f:
-                f.write(response.content)
-            print("Harika! Takvim başarıyla baro_takvim.ics olarak indirildi.")
-        else:
-            print(f"Hata: Takvim indirilemedi. Sunucu kodu: {response.status_code}")
+        try:
+            response = requests.get(url, headers=headers)
+            response.raise_for_status()
+        except requests.exceptions.RequestException as e:
+            print(f"Sayfa {page} yüklenirken hata oluştu: {e}")
+            break
             
-    except Exception as e:
-        print(f"Bir hata oluştu: {e}")
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Etkinlikleri içeren <a> etiketlerini bul (HTML yapısına uygun)
+        event_links = soup.find_all('a', class_=lambda c: c and 'group' in c and 'bg-card' in c)
+        
+        if not event_links:
+            # Bu sayfada etkinlik yoksa, son sayfaya gelmişiz demektir
+            print("Tarama tamamlandı, başka etkinlik bulunamadı.")
+            break
+            
+        for a_tag in event_links:
+            event_data = {}
+            
+            # 1. URL
+            event_data['url'] = a_tag.get('href', '')
+            
+            # 2. Başlık
+            h3_tag = a_tag.find('h3')
+            event_data['title'] = h3_tag.text.strip() if h3_tag else "İsimsiz Etkinlik"
+            
+            # 3. Tarih/Saat bilgisi (datetime attribute'undan)
+            time_tag = a_tag.find('time')
+            if time_tag and time_tag.has_attr('datetime'):
+                event_data['datetime'] = time_tag['datetime']
+            else:
+                continue # Tarih/saat yoksa takvime ekleyemeyiz
+                
+            # 4. Konum (En alttaki map-pin ikonunun yanındaki span)
+            # Konum span'ını bulmak için class'ında 'line-clamp-1' olanı ve içinde ikon olan div'i arıyoruz
+            loc_div = a_tag.find('div', class_='mt-auto')
+            if loc_div:
+                loc_span = loc_div.find('span')
+                if loc_span:
+                    event_data['location'] = loc_span.text.strip()
+            
+            all_events.append(event_data)
+            
+        # Sonraki sayfaya geç
+        page += 1
+        
+    print(f"Toplam {len(all_events)} etkinlik bulundu.")
+    
+    if all_events:
+        ics_content = create_ics(all_events)
+        with open("baro_takvim.ics", "w", encoding="utf-8") as f:
+            f.write(ics_content)
+        print("Takvim dosyası (baro_takvim.ics) başarıyla oluşturuldu!")
+    else:
+        print("Hiç etkinlik bulunamadığı için takvim oluşturulmadı.")
 
 if __name__ == "__main__":
     update_calendar()
