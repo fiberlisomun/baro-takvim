@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import uuid
 import re
 import time
+import calendar
 
 def create_ics(events):
     lines = [
@@ -22,13 +23,9 @@ def create_ics(events):
             dt_start_orig = datetime.strptime(event['datetime'], "%Y-%m-%dT%H:%M:%S.%fZ")
             dt_start_local = dt_start_orig + timedelta(hours=3) # Türkiye saatine çevir
             
-            base_year = dt_start_local.year
-            base_month = dt_start_local.month
+            # Etkinliğin kaç günlük ofsetleri olduğu (Örn: 2 günlükse [0, 1] gelir)
+            offsets_to_process = event.get('extracted_offsets', [0])
             
-            # Etkinliğin günleri (Özel olarak bulunduysa onu, yoksa tek günü kullan)
-            days_to_process = event.get('extracted_days', [dt_start_local.day])
-            
-            # Etkinliğin saatleri (Özel olarak bulunduysa onu, yoksa varsayılan 2 saati kullan)
             start_time_str = event.get('custom_start_time')
             end_time_str = event.get('custom_end_time')
             
@@ -41,16 +38,18 @@ def create_ics(events):
                 
             base_uid = str(uuid.uuid4())
             
-            for i, day in enumerate(days_to_process):
+            for i, offset in enumerate(offsets_to_process):
                 lines.append("BEGIN:VEVENT")
                 current_uid = f"{base_uid}-part{i}@istanbulbarosu.org.tr"
                 lines.append(f"UID:{current_uid}")
                 lines.append(f"DTSTAMP:{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}")
                 
                 try:
-                    # Bulunan gün ve saati birleştirerek o günkü takvim bloğunu oluştur
-                    local_start = datetime(base_year, base_month, day, sh, sm)
-                    local_end = datetime(base_year, base_month, day, eh, em)
+                    # Ana tarihe gün farkını (offset) ekleyerek o günkü tarihi bul
+                    current_date_local = dt_start_local + timedelta(days=offset)
+                    
+                    local_start = current_date_local.replace(hour=sh, minute=sm)
+                    local_end = current_date_local.replace(hour=eh, minute=em)
                     
                     # ICS formatı gereği tekrar UTC'ye çevirip kaydet (-3 saat)
                     utc_start = local_start - timedelta(hours=3)
@@ -59,7 +58,6 @@ def create_ics(events):
                     lines.append(f"DTSTART:{utc_start.strftime('%Y%m%dT%H%M%SZ')}")
                     lines.append(f"DTEND:{utc_end.strftime('%Y%m%dT%H%M%SZ')}")
                 except ValueError:
-                    # Olası bir tarih hatasında (örn ayın gününü aşarsa) orijinal tarihe dön
                     lines.append(f"DTSTART:{dt_start_orig.strftime('%Y%m%dT%H%M%SZ')}")
                     lines.append(f"DTEND:{(dt_start_orig + timedelta(hours=2)).strftime('%Y%m%dT%H%M%SZ')}")
                     
@@ -69,12 +67,10 @@ def create_ics(events):
                 url = f"https://istanbulbarosu.org.tr{event['url']}"
                 desc_text = f"Detaylar için tıklayın: {url}"
                 
-                # Açıklama kısmına sistemin ne okuduğunu not düşelim
-                if 'extracted_days' in event or 'custom_start_time' in event:
-                    days_str = ", ".join(map(str, days_to_process))
-                    month_name = event.get('extracted_month', '')
-                    time_str = f"{start_time_str}-{end_time_str}" if start_time_str else f"{sh:02d}:{sm:02d}-{eh:02d}:{em:02d}"
-                    desc_text = f"Özel Takvim Taraması: {days_str} {month_name} | Saat: {time_str}\\n{desc_text}"
+                # Açıklamaya tarama detaylarını ekle
+                if 'extracted_offsets' in event or 'custom_start_time' in event:
+                    time_str = f"{start_time_str}-{end_time_str}" if start_time_str else "Standart Saat"
+                    desc_text = f"Özel Takvim Taraması: {len(offsets_to_process)} Günlük Etkinlik | Saat: {time_str}\\n{desc_text}"
                 
                 lines.append(f"DESCRIPTION:{desc_text}")
                 lines.append(f"URL:{url}")
@@ -128,6 +124,9 @@ def update_calendar():
             time_tag = a_tag.find('time')
             if time_tag and time_tag.has_attr('datetime'):
                 event_data['datetime'] = time_tag['datetime']
+                # Ana sayfadaki gerçek (orijinal) günü kaydediyoruz
+                dt_start_orig = datetime.strptime(event_data['datetime'], "%Y-%m-%dT%H:%M:%S.%fZ")
+                base_day = (dt_start_orig + timedelta(hours=3)).day
             else:
                 continue 
                 
@@ -148,22 +147,36 @@ def update_calendar():
                         detail_soup = BeautifulSoup(detail_response.text, 'html.parser')
                         detail_text = detail_soup.text.lower()
                         
-                        # 1. TARİH AVCISI (Örn: "7, 8, 14 ve 15 ekim" veya "26-27 eylül")
-                        date_match = re.search(fr'\b(\d{{1,2}}(?:\s*(?:-|/|,|ve|ile)\s*\d{{1,2}})+)\s+({aylar})\b', detail_text)
-                        if date_match:
-                            days_str = date_match.group(1)
-                            # İçindeki tüm sayıları listeye al
-                            extracted_days = [int(d) for d in re.findall(r'\d+', days_str)]
-                            # Tekrar eden günleri çıkar ve sırala
-                            extracted_days = sorted(list(set(extracted_days)))
+                        # 1. TARİH AVCISI (Sadece orijinal günü barındıran tarih aralıklarını kabul eder)
+                        date_matches = re.finditer(fr'\b(\d{{1,2}}(?:\s*(?:-|/|,|ve|ile|–)\s*\d{{1,2}})+)\s+({aylar})\b', detail_text)
+                        
+                        for match in date_matches:
+                            days_str = match.group(1)
+                            found_numbers = [int(d) for d in re.findall(r'\d+', days_str)]
+                            is_range = bool(re.search(r'-|–|ile', days_str)) and len(found_numbers) == 2
                             
-                            if len(extracted_days) > 1:
-                                event_data['extracted_days'] = extracted_days
-                                event_data['extracted_month'] = date_match.group(2).capitalize()
-                                print(f"-> Çoklu Gün Bulundu: {event_data['title']} ({extracted_days})")
+                            # EĞER BULUNAN TARİH GRUBU ANA GÜNÜ (Örn: 26) İÇERİYORSA KABUL ET!
+                            if base_day in found_numbers or (is_range and found_numbers[0] <= base_day <= found_numbers[1]):
+                                if is_range:
+                                    days_list = list(range(found_numbers[0], found_numbers[1] + 1))
+                                else:
+                                    days_list = sorted(list(set(found_numbers)))
+                                    
+                                offsets = []
+                                for d in days_list:
+                                    if d >= base_day:
+                                        offsets.append(d - base_day)
+                                    else:
+                                        # Aydan aya sarkma hesaplaması (Örn: 30'undan 1'ine)
+                                        _, month_len = calendar.monthrange(dt_start_orig.year, dt_start_orig.month)
+                                        offsets.append((month_len - base_day) + d)
+                                        
+                                event_data['extracted_offsets'] = offsets
+                                print(f"-> Çoklu Gün Doğrulandı: {event_data['title']} ({days_list})")
+                                break # Yanlış tarihleri (örn 10,11 Ekim) bulmamak için doğruyu bulunca çık
                                 
-                        # 2. SAAT AVCISI (Örn: "09:00 - 17:00" veya "09.00-17.30")
-                        time_match = re.search(r'(\d{1,2}[:.]\d{2})\s*-\s*(\d{1,2}[:.]\d{2})', detail_text)
+                        # 2. SAAT AVCISI
+                        time_match = re.search(r'(\d{1,2}[:.]\d{2})\s*(?:-|–)\s*(\d{1,2}[:.]\d{2})', detail_text)
                         if time_match:
                             event_data['custom_start_time'] = time_match.group(1).replace('.', ':')
                             event_data['custom_end_time'] = time_match.group(2).replace('.', ':')
@@ -172,7 +185,6 @@ def update_calendar():
                 except Exception as e:
                     print(f"Detay sayfası okunamadı: {e}")
             
-            # Sunucuyu yormamak için her detay sayfasında 0.5 saniye bekle
             time.sleep(0.5)
             all_events.append(event_data)
             
