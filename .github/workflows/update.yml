@@ -1,0 +1,33 @@
+name: Baro Takvimini Guncelle
+
+on:
+  schedule:
+    - cron: "0 0 1,15 * *" # Her ayın 1'inde ve 15'inde çalışır
+  workflow_dispatch: # İstediğinizde manuel tetiklemek için
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repoyu Klonla
+        uses: actions/checkout@v3
+
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Gerekli Kütüphaneleri Yükle
+        run: pip install requests beautifulsoup4
+
+      - name: Takvim Güncelleme Scriptini Çalıştır
+        run: python update.py
+
+      - name: Yeni Takvimi Kaydet
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add baro_takvim.ics
+          git commit -m "Takvim güncellendi" || exit 0
+          git push
