@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import uuid
-import re
 
 def create_ics(events):
     lines = [
@@ -17,36 +16,23 @@ def create_ics(events):
     
     for event in events:
         try:
-            # Örnek datetime formatı: "2026-09-26T06:00:00.000Z"
+            # Sitenin datetime formatı: 2026-09-26T06:00:00.000Z
             dt_start = datetime.strptime(event['datetime'], "%Y-%m-%dT%H:%M:%S.%fZ")
             
-            date_text = event.get('date_text', '')
-            extra_days = 0
-            
-            # Sitede yazan metinden gün farkını bul (Örn: "26-27")
-            match = re.search(r'(\d{1,2})\s*-\s*(\d{1,2})', date_text)
-            if match:
-                day1 = int(match.group(1))
-                day2 = int(match.group(2))
-                if day2 > day1:
-                    extra_days = day2 - day1
-                else:
-                    extra_days = 1 # Aydan aya sarkma durumu
-            
             base_uid = str(uuid.uuid4())
+            extra_days = event.get('extra_days', 0)
             
-            # Etkinlik kaç gün sürüyorsa o kadar gün için ayrı blok (VEVENT) oluştur
             for i in range(extra_days + 1):
                 lines.append("BEGIN:VEVENT")
                 
-                # Her blok için UID'nin farklı olması lazım ki telefon birini diğerinin üstüne yazmasın
+                # Her gün için farklı UID
                 current_uid = f"{base_uid}-day{i}@istanbulbarosu.org.tr"
                 lines.append(f"UID:{current_uid}")
                 lines.append(f"DTSTAMP:{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}")
                 
-                # O günkü başlangıç ve bitiş saati (Her güne +1 gün ekleyerek ilerler, saat aynı kalır)
+                # O günkü başlangıç ve bitiş
                 current_start = dt_start + timedelta(days=i)
-                current_end = current_start + timedelta(hours=2) # 2 saatlik etkinlik süresi
+                current_end = current_start + timedelta(hours=2)
                 
                 lines.append(f"DTSTART:{current_start.strftime('%Y%m%dT%H%M%SZ')}")
                 lines.append(f"DTEND:{current_end.strftime('%Y%m%dT%H%M%SZ')}")
@@ -55,7 +41,10 @@ def create_ics(events):
                 lines.append(f"SUMMARY:{title}")
                 
                 url = f"https://istanbulbarosu.org.tr{event['url']}"
-                desc_text = f"Sitedeki Tarih: {event.get('date_text', '')}\\nDetaylar için tıklayın: {url}"
+                
+                # Sitedeki orijinal tarihi de açıklamaya ekleyelim
+                display_date = event.get('display_date_text', '')
+                desc_text = f"Sitedeki Tarih: {display_date}\\nDetaylar için tıklayın: {url}"
                 lines.append(f"DESCRIPTION:{desc_text}")
                 lines.append(f"URL:{url}")
                 
@@ -74,7 +63,7 @@ def create_ics(events):
 def update_calendar():
     base_url = "https://istanbulbarosu.org.tr/etkinlikler"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
     }
     
     all_events = []
@@ -103,10 +92,36 @@ def update_calendar():
             h3_tag = a_tag.find('h3')
             event_data['title'] = h3_tag.text.strip() if h3_tag else "İsimsiz Etkinlik"
             
+            # ANA DEĞİŞİKLİK BURASI
             time_tag = a_tag.find('time')
             if time_tag and time_tag.has_attr('datetime'):
                 event_data['datetime'] = time_tag['datetime']
-                event_data['date_text'] = time_tag.text.strip()
+                
+                # Bazı etkinliklerde (Sertifika programı gibi) başlığın içinde veya hemen 
+                # altında küçük bir yazıyla asıl tarih yazar (örn. "26 - 27 Eylül"). 
+                # Biz kartın (a_tag) içindeki tüm metinleri arayıp, içinde "-" olan 
+                # çok günlük tarihleri tespit edeceğiz.
+                
+                full_text = a_tag.text.lower()
+                extra_days = 0
+                
+                # "26-27" veya "26 - 27" formatını arayan regex
+                import re
+                match = re.search(r'(\d{1,2})\s*-\s*(\d{1,2})', full_text)
+                if match:
+                    day1 = int(match.group(1))
+                    day2 = int(match.group(2))
+                    if day2 > day1:
+                        extra_days = day2 - day1
+                    else:
+                        extra_days = 1 # Aydan aya sarkma (30-1 gibi)
+                        
+                event_data['extra_days'] = extra_days
+                event_data['display_date_text'] = time_tag.text.strip() # Sadece ilk günü alır
+                
+                # EĞER METİNDE ÇOK GÜNLÜK BİR İFADE BULUNDUYSA, EKRANA YAZDIR
+                if extra_days > 0:
+                    print(f"Çok günlük etkinlik bulundu: {event_data['title']} ({extra_days+1} gün)")
             else:
                 continue 
                 
