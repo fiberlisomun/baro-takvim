@@ -6,8 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:İstanbul Barosu Etkinlikleri
 X-WR-TIMEZONE:Europe/Istanbul
 BEGIN:VEVENT
-UID:6b1799bf-21cb-4651-afe4-29a7d61aefb4-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:d9acf683-76ea-41ca-a5ef-f3a6d0a824f9-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261001T103000Z
 DTEND:20261001T123000Z
 SUMMARY:AVUKAT MEHMET KAYA ANISINA VERGİ HUKUKU PANELİ
@@ -16,8 +16,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/avukat-mehmet-kaya-anisina-vergi-h
 LOCATION:İstanbul Barosu Eğitim\, Araştırma ve Uygulama Merkezi Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:0cbb6209-79f5-4aa7-91ab-6de008476420-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:4d89a175-7f56-41b4-b146-bb68d814d7f2-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261001T150000Z
 DTEND:20261001T170000Z
 SUMMARY:BELİRSİZ ALACAK VE KISMİ DAVA İLE İLGİLİ DEĞİŞİKLİKLERİN DEĞERLENDİRİLMESİ
@@ -25,8 +25,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/belirsiz-alacak-ve-kismi-dava-ile-ilgili-degisikliklerin-degerlendirilmesi
 END:VEVENT
 BEGIN:VEVENT
-UID:c1fd2118-2112-41f1-92b6-ea3e9ca06a7f-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:2a4ee645-6de4-4ffa-86ef-f852e214cbfc-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261002T073000Z
 DTEND:20261002T093000Z
 SUMMARY:İDARE HUKUKUNA GENÇ YAKLAŞIMLAR SEMPOZYUMU
@@ -35,8 +35,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/idare-hukukuna-genc-yaklasimlar-se
 LOCATION:İstanbul Barosu Eğitim\, Araştırma ve Uygulama Merkezi Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:49aeb30c-33c4-4472-a2bf-d247765773b6-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:6027dcfa-9e13-469e-908a-fc6e31dcf3b3-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261002T073000Z
 DTEND:20261002T093000Z
 SUMMARY:REKABET HUKUKU 101
@@ -44,8 +44,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/rekabet-hukuku-101-3
 END:VEVENT
 BEGIN:VEVENT
-UID:8bc208c9-d3b0-4959-8510-cb0d179b9c30-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:7310b0f8-03b0-4106-9ce9-9906ae21b0fc-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261002T163000Z
 DTEND:20261002T183000Z
 SUMMARY:İSTANBUL BAROSU ÇOK SESLİ KOROSU 2026-2027 SEZONU ÇALIŞMALARINA BAŞLADI
@@ -53,8 +53,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/istanbul-barosu-cok-sesli-korosu-2026-2027
 END:VEVENT
 BEGIN:VEVENT
-UID:3f5c6567-ba0c-4b85-98a5-f39d3aaf5414-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:f598af52-09a1-4b13-bdde-e77769038224-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261003T070000Z
 DTEND:20261003T090000Z
 SUMMARY:GENÇ AVUKATLAR KAHVALTIDA BULUŞUYOR
@@ -62,8 +62,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/genc-avukatlar-kahvaltida-bulusuyor-1
 END:VEVENT
 BEGIN:VEVENT
-UID:4f828d73-fccf-4511-a139-fac5702328a4-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:6b90ea71-abc2-4a7f-9b3b-61413f10c88f-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261003T100000Z
 DTEND:20261003T120000Z
 SUMMARY:HASANPAŞA GAZHANE KADIKÖY KARİKATÜR VE MİZAH MÜZESİ GEZİSİ
@@ -71,8 +71,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/hasanpasa-gazhane-kadikoy-karikatur-ve-mizah-muzesi-gezisi
 END:VEVENT
 BEGIN:VEVENT
-UID:13554b81-4dc9-4a68-8b5c-846e7941709d-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:d337da53-9929-4a5e-be5c-0b900c060e89-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261003T100000Z
 DTEND:20261003T120000Z
 SUMMARY:ÇALIŞTAY: ANAYASALAŞMASININ 25. YILINDA ADİL YARGILANMA HAKKI
@@ -81,8 +81,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/calistay-anayasalasmanin-25-yilind
 LOCATION:İstanbul Barosu Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:d808510b-a4fc-405d-b88e-5b19bf7d171b-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:c9543ce6-ae01-4a9c-905f-2d235fc4d2fa-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261003T110000Z
 DTEND:20261003T130000Z
 SUMMARY:MARKA VEKİLLİĞİ VE PATENT VEKİLLİĞİ SINAVI SORU ÇÖZÜMÜ
@@ -90,8 +90,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/marka-vekilligi-ve-patent-vekilligi-sinavi-soru-cozumu
 END:VEVENT
 BEGIN:VEVENT
-UID:ae9e628a-7a97-4440-854e-d64050c4156e-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:85d65e85-a5e1-4fc4-b8fa-aaf7da9a46c3-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261007T100000Z
 DTEND:20261007T120000Z
 SUMMARY:AVUKATLIK MESLEĞİNDE YENİ REHBERLER: YAPAY ZEKA KULLANIMI VE KİŞİSEL VERŞLERŞN KORUNMASI
@@ -99,8 +99,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/avukatlik-mesleginde-yeni-rehberler-yapay-zeka-kullanimi-ve-kisisel-verslersn-korunmasi
 END:VEVENT
 BEGIN:VEVENT
-UID:c61f2194-4e3a-493e-85d1-601823ad5a6a-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:b5b7f13f-267e-48a6-be3e-0fc50974a253-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261021T150000Z
 DTEND:20261021T170000Z
 SUMMARY:MİRASÇILIKTAN ÇIKARMA VE MİRASTAN YOKSULLUK YARATAN SEBEPLERE TOPLU BAKIŞ
@@ -108,8 +108,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/mirasciliktan-cikarma-ve-mirastan-yoksulluk-yaratan-sebeplere-toplu-bakis
 END:VEVENT
 BEGIN:VEVENT
-UID:d5763be1-06d5-46cf-8314-e82ddadbdd55-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261004T052226Z
+UID:4a0274f5-a39d-49ec-b91e-17d84b5be6f8-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261005T050549Z
 DTSTART:20261026T210000Z
 DTEND:20261026T230000Z
 SUMMARY:AVUKAT SPOR OYUNLARI
