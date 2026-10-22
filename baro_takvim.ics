@@ -6,8 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:İstanbul Barosu Etkinlikleri
 X-WR-TIMEZONE:Europe/Istanbul
 BEGIN:VEVENT
-UID:a0cbccab-28cb-4d94-8820-f8dc25bb407f-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:e35af059-141f-4cc4-8a82-4ff498a7e9ac-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261001T103000Z
 DTEND:20261001T123000Z
 SUMMARY:AVUKAT MEHMET KAYA ANISINA VERGİ HUKUKU PANELİ
@@ -16,8 +16,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/avukat-mehmet-kaya-anisina-vergi-h
 LOCATION:İstanbul Barosu Eğitim\, Araştırma ve Uygulama Merkezi Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:9b9b174d-6be6-44c0-b96f-438026af5c8d-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:1edc73f6-72ac-463f-bfcf-4078cf0da8fd-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261001T150000Z
 DTEND:20261001T170000Z
 SUMMARY:BELİRSİZ ALACAK VE KISMİ DAVA İLE İLGİLİ DEĞİŞİKLİKLERİN DEĞERLENDİRİLMESİ
@@ -25,8 +25,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/belirsiz-alacak-ve-kismi-dava-ile-ilgili-degisikliklerin-degerlendirilmesi
 END:VEVENT
 BEGIN:VEVENT
-UID:6e724ad8-47b4-4fe2-9f2f-adf11389ffb2-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:d9a286b3-be05-47b5-8ad8-2b3d4d356f6c-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261002T073000Z
 DTEND:20261002T093000Z
 SUMMARY:İDARE HUKUKUNA GENÇ YAKLAŞIMLAR SEMPOZYUMU
@@ -35,8 +35,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/idare-hukukuna-genc-yaklasimlar-se
 LOCATION:İstanbul Barosu Eğitim\, Araştırma ve Uygulama Merkezi Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:0f8ca075-0059-4158-8f50-0a044b57c17b-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:b2e0e681-7a7a-49ed-91d1-e4d9690b4445-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261002T073000Z
 DTEND:20261002T093000Z
 SUMMARY:REKABET HUKUKU 101
@@ -44,8 +44,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/rekabet-hukuku-101-3
 END:VEVENT
 BEGIN:VEVENT
-UID:c51b4a7d-c059-4e5e-846a-1d35c44f61d4-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:95015548-ffdb-4ddc-99f5-b28a759e8f14-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261002T163000Z
 DTEND:20261002T183000Z
 SUMMARY:İSTANBUL BAROSU ÇOK SESLİ KOROSU 2026-2027 SEZONU ÇALIŞMALARINA BAŞLADI
@@ -53,8 +53,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/istanbul-barosu-cok-sesli-korosu-2026-2027
 END:VEVENT
 BEGIN:VEVENT
-UID:405df81c-3825-4cbd-9700-cfb01eccae34-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:b3c8d19f-130c-45d1-89ad-1612bb8fb721-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261003T070000Z
 DTEND:20261003T090000Z
 SUMMARY:GENÇ AVUKATLAR KAHVALTIDA BULUŞUYOR
@@ -62,8 +62,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/genc-avukatlar-kahvaltida-bulusuyor-1
 END:VEVENT
 BEGIN:VEVENT
-UID:7dc39003-f76b-4dad-a3a2-c3c2d53cc982-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:8b009e6e-cc99-4392-bc4d-2772032b5306-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261003T100000Z
 DTEND:20261003T120000Z
 SUMMARY:HASANPAŞA GAZHANE KADIKÖY KARİKATÜR VE MİZAH MÜZESİ GEZİSİ
@@ -71,8 +71,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/hasanpasa-gazhane-kadikoy-karikatur-ve-mizah-muzesi-gezisi
 END:VEVENT
 BEGIN:VEVENT
-UID:fd5aec35-3014-4c3d-b1fc-c5157f08345c-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:2916450a-2aa7-4de0-aacb-0080c0f57c3e-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261003T100000Z
 DTEND:20261003T120000Z
 SUMMARY:ÇALIŞTAY: ANAYASALAŞMASININ 25. YILINDA ADİL YARGILANMA HAKKI
@@ -81,8 +81,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/calistay-anayasalasmanin-25-yilind
 LOCATION:İstanbul Barosu Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:77f62108-cd42-4a89-90ee-ca893f0f4a78-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:ea2c4531-ff4c-42b6-96e5-be71f26bd746-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261003T110000Z
 DTEND:20261003T130000Z
 SUMMARY:MARKA VEKİLLİĞİ VE PATENT VEKİLLİĞİ SINAVI SORU ÇÖZÜMÜ
@@ -90,8 +90,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/marka-vekilligi-ve-patent-vekilligi-sinavi-soru-cozumu
 END:VEVENT
 BEGIN:VEVENT
-UID:10c6edba-6f9a-4d37-b631-58bef350f14d-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:554fb5a2-ea43-49b6-b9da-53aa0705cd40-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261006T163000Z
 DTEND:20261006T183000Z
 SUMMARY:KIZIL DARI TARLALARI
@@ -100,8 +100,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/kizil-dari-tarlalari
 LOCATION:CMK 1. Kat Toplantı Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:a73e2c0a-b8eb-4386-a60b-8cef0d23f4d2-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:51a0f3f4-3bd5-4f0b-835c-4df589f2e5bd-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261007T100000Z
 DTEND:20261007T120000Z
 SUMMARY:AVUKATLIK MESLEĞİNDE YENİ REHBERLER: YAPAY ZEKA KULLANIMI VE KİŞİSEL VERİLERİN KORUNMASI
@@ -109,8 +109,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/avukatlik-mesleginde-yeni-rehberler-yapay-zeka-kullanimi-ve-kisisel-verilerin-korunmasi
 END:VEVENT
 BEGIN:VEVENT
-UID:99984b34-724b-450d-a3cc-517b583aa68f-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:ac665cec-8198-4752-9308-ef38f60c4667-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261010T061500Z
 DTEND:20261010T081500Z
 SUMMARY:KADIN HAKLARI VE KADINA YÖNELİK ŞİDDET KONULU SERTİFİKA PROGRAMI
@@ -119,8 +119,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/kadin-haklari-ve-kadina-yonelik-si
 LOCATION:İstanbul Barosu Av. Gülçin Çaylıgil Eğitim Salonu - Nursanlar Kartal 1 Plaza 2. Kat (Anadolu Adliyesi Karşısı)
 END:VEVENT
 BEGIN:VEVENT
-UID:0825451e-f446-4ccc-8973-65fccfca80dd-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:6174b923-b142-42d5-a88e-caa5af685564-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261010T063000Z
 DTEND:20261010T083000Z
 SUMMARY:MİRAS HUKUKU EĞİTİMİ
@@ -129,8 +129,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/miras-hukuku-egitimi
 LOCATION:Silivri Belediyesi Yaşar Kemal Nikâh ve Toplantı Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:8cc75a7e-a02f-4242-a64e-bf06ac3f7c04-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:081d0037-4183-4eee-a098-f92b640aa9de-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261012T170000Z
 DTEND:20261012T190000Z
 SUMMARY:İSTANBUL BAROSU TİYATROSU 15. DÖNEM ÇALIŞMALARI BAŞLIYOR
@@ -139,8 +139,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/istanbul-barosu-tiyatrosu-15-donem
 LOCATION:İStanbul Barosu Tiyatrosu Sanat Atölyesi
 END:VEVENT
 BEGIN:VEVENT
-UID:57c72dfd-5bfb-4ec6-838d-b72a4fe23d35-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:17d8602b-d1f1-48ad-bead-97dc2e26b500-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261013T153000Z
 DTEND:20261013T173000Z
 SUMMARY:TÜRK VE ALMAN CEZA HUKUKUNDA IBAN DOLANDIRICILIĞI
@@ -149,8 +149,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/turk-ve-alman-ceza-hukukunda-iban-
 LOCATION:İStanbul Barosu Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:22b4cef9-3654-4a11-94fd-bb673de2b1c8-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:9b1732bb-e21e-41be-93ce-adb5d031a47c-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261015T150000Z
 DTEND:20261015T170000Z
 SUMMARY:SERMAYE PİYASASI MEVZUATI KAPSAMINDA YATIRIM FONLARINDA GÜNCEL GELİŞMELER
@@ -159,8 +159,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/sermaye-piyasasi-mevzuati-kapsamin
 LOCATION:İstanbul Barosu Merkez Bina Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:2f6b28b2-f970-45f9-b5b4-f3455888e378-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:3e342c26-2d47-4b01-812d-1eba229e5497-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261016T160000Z
 DTEND:20261016T180000Z
 SUMMARY:SİGORTA HUKUKUNDA BEDENSEL ZARARLARIN TAZMİNİ
@@ -169,8 +169,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/sigorta-hukukunda-bedensel-zararla
 LOCATION:İstanbul Barosu Kültür Merkezi
 END:VEVENT
 BEGIN:VEVENT
-UID:6cb52cf8-5436-4ce3-8d5b-cbc173716d5f-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:8c553977-75d4-4536-8617-207e6308ce73-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261016T163000Z
 DTEND:20261016T183000Z
 SUMMARY:SERMAYE PİYASASI İŞLEMLERİNDE MANİPÜLASYON VE FON İŞLEMLERİNİN CEZA SORUMLULUĞU
@@ -179,8 +179,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/sermaye-piyasasi-islemlerinde-mani
 LOCATION:İstanbul Barosu Eğitim\, Araştırma ve Uygulama Merkezi Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:6083b897-b026-4a65-9c45-f1975ad62a1b-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:0eb6b66f-4d73-45b3-b448-e1b775779a34-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261017T170000Z
 DTEND:20261017T190000Z
 SUMMARY:GÖSTERİ: ANTİGONE
@@ -188,8 +188,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/gosteri-antigone
 END:VEVENT
 BEGIN:VEVENT
-UID:587bfe76-4a40-48f6-b5cf-d3f57c518b33-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:d0192279-a3fc-432c-84dc-bd78155b20fb-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261019T160000Z
 DTEND:20261019T180000Z
 SUMMARY:YARGITAY UYGULAMALARI IŞIĞINDA MÜZİK SEKTÖRÜNDE EDİSYON SÖZLEŞMELERİNİN HUKUKİ NİTELİĞİ\, KAPSAM VE DİKKAT EDİLMESİ GEREKEN HUSUSLAR
@@ -198,8 +198,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/yargitay-uygulamalari-isiginda-muz
 LOCATION:Çevrimiçi - Online
 END:VEVENT
 BEGIN:VEVENT
-UID:ad5c9239-1b95-4c2c-8c55-ac404c94c3c4-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:4f00f79a-aae6-4561-b5a2-f591f30ab98d-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261019T163000Z
 DTEND:20261019T183000Z
 SUMMARY:KARŞILAŞTIRMALI SÖYLEŞİ
@@ -208,8 +208,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/karsilastirmali-soylesi
 LOCATION:İstanbul Barosu CMK Binası 1. Kat
 END:VEVENT
 BEGIN:VEVENT
-UID:5e67457a-40f8-4224-8fcd-c6127df752b1-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:35c6f3bb-7b08-463e-942b-21c9202403a5-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261021T150000Z
 DTEND:20261021T170000Z
 SUMMARY:MİRASÇILIKTAN ÇIKARMA VE MİRASTAN YOKSULLUK YARATAN SEBEPLERE TOPLU BAKIŞ
@@ -218,18 +218,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/mirasciliktan-cikarma-ve-mirastan-
 LOCATION:Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:1700cd08-aaee-4b6d-9f6c-ac6fc11d38bd-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
-DTSTART:20261021T160000Z
-DTEND:20261021T180000Z
-SUMMARY:DANS VE GÖSTERİ SANATLARI YENİ DÖNEM ÇALIŞMALARI
-DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/dans-ve-gosteri-sanatlari-yeni-donem-calismalari
-URL:https://istanbulbarosu.org.tr/etkinlikler/dans-ve-gosteri-sanatlari-yeni-donem-calismalari
-LOCATION:CMK 1. KAT TOPLANTI SALONU
-END:VEVENT
-BEGIN:VEVENT
-UID:cbe04b34-37be-494d-8ceb-6b86f974faf7-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:af082b28-bbb7-4bdd-8bbe-67e7094af91a-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261021T163000Z
 DTEND:20261021T183000Z
 SUMMARY:İSTANBUL BAROSU TİYATROCULARI 5. DÖNEM ÇALIŞMALARINA BAŞLIYOR!
@@ -238,8 +228,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/istanbul-barosu-tiyatroculari-5-do
 LOCATION:İstanbul Barosu Kültür Merkezi
 END:VEVENT
 BEGIN:VEVENT
-UID:8bc41d92-36b4-48f7-a255-5665eaab236a-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:6ee99ac0-7691-40b0-afc9-cb2f65c8e2d6-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261022T140000Z
 DTEND:20261022T160000Z
 SUMMARY:UZAY FAALİYETLERİNDE YAPAY ZEKA KULLANIMININ HUKUKİ VE TEKNİK BOYUTLARI
@@ -248,8 +238,18 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/uzay-faaliyetlerinde-yapay-zeka-ku
 LOCATION:Galata Kültür Merkezi
 END:VEVENT
 BEGIN:VEVENT
-UID:297abf6c-2943-4412-ab7c-311f4f26674a-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:1bb357df-5b9a-4c75-9226-4de720081cd8-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
+DTSTART:20261023T070000Z
+DTEND:20261023T090000Z
+SUMMARY:OTOMOBİL SEKTÖRÜNDE AYIPTAN KAYNAKLANAN TÜKETİCİ HUKUKU UYUŞMAZLIKLARI
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/otomobil-sektorunde-ayiptan-kaynaklanan-tuketici-hukuku-uyusmazliklari
+URL:https://istanbulbarosu.org.tr/etkinlikler/otomobil-sektorunde-ayiptan-kaynaklanan-tuketici-hukuku-uyusmazliklari
+LOCATION:Çevrimiçi Online
+END:VEVENT
+BEGIN:VEVENT
+UID:44048105-ba84-480e-ab29-dc489030d430-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261026T210000Z
 DTEND:20261026T230000Z
 SUMMARY:AVUKAT SPOR OYUNLARI
@@ -257,8 +257,8 @@ DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler
 URL:https://istanbulbarosu.org.tr/etkinlikler/avukat-spor-oyunlari
 END:VEVENT
 BEGIN:VEVENT
-UID:713663b1-5cfa-4f0e-8137-51c007775090-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261021T041313Z
+UID:65cac42a-61ef-420c-adfd-faf27adab109-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261022T041332Z
 DTSTART:20261028T210000Z
 DTEND:20261028T230000Z
 SUMMARY:ANTİK KARIA YOLU DOĞA YÜRÜYÜŞÜ
