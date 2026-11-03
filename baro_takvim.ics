@@ -6,8 +6,28 @@ METHOD:PUBLISH
 X-WR-CALNAME:İstanbul Barosu Etkinlikleri
 X-WR-TIMEZONE:Europe/Istanbul
 BEGIN:VEVENT
-UID:b954ca40-142c-43fd-adbe-406bea93e2e2-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261102T052900Z
+UID:3728cf0e-ee1d-4078-b7ac-ea7e70c2eb6b-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261103T060838Z
+DTSTART:20261114T060000Z
+DTEND:20261114T080000Z
+SUMMARY:TÜKETİCİ HUKUKU TEMEL EĞİTİMİ
+DESCRIPTION:✅ Sistem Taraması: 2 Günlük | Saat: 09:00-11:00\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/tuketici-hukuku-temel-egitimi-1
+URL:https://istanbulbarosu.org.tr/etkinlikler/tuketici-hukuku-temel-egitimi-1
+LOCATION:Zoom Üzerinden Çevrimiçi
+END:VEVENT
+BEGIN:VEVENT
+UID:3728cf0e-ee1d-4078-b7ac-ea7e70c2eb6b-gun1@istanbulbarosu.org.tr
+DTSTAMP:20261103T060838Z
+DTSTART:20261115T060000Z
+DTEND:20261115T080000Z
+SUMMARY:TÜKETİCİ HUKUKU TEMEL EĞİTİMİ
+DESCRIPTION:✅ Sistem Taraması: 2 Günlük | Saat: 09:00-11:00\nDetaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/tuketici-hukuku-temel-egitimi-1
+URL:https://istanbulbarosu.org.tr/etkinlikler/tuketici-hukuku-temel-egitimi-1
+LOCATION:Zoom Üzerinden Çevrimiçi
+END:VEVENT
+BEGIN:VEVENT
+UID:e434aebb-da9e-4710-95ea-d7b291a54151-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261103T060838Z
 DTSTART:20261114T090000Z
 DTEND:20261114T110000Z
 SUMMARY:İSTANBUL MODERN SANAT MÜZESİ SEMİHA BERKSOY SERGİSİ
@@ -16,8 +36,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/istanbul-modern-sanat-muzesi-semih
 LOCATION:İstanbul Modern SAnat Müzesi
 END:VEVENT
 BEGIN:VEVENT
-UID:c1bc1653-f459-4bd4-9de4-618138fee3b1-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261102T052900Z
+UID:3d94d6d5-8a0e-4537-a399-ace1e076c622-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261103T060838Z
 DTSTART:20261127T160000Z
 DTEND:20261127T180000Z
 SUMMARY:KADININ SESİ: DEYİŞLER\, TÜRKÜLER VE ŞARKILARLA
