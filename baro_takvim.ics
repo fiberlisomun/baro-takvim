@@ -6,8 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:İstanbul Barosu Etkinlikleri
 X-WR-TIMEZONE:Europe/Istanbul
 BEGIN:VEVENT
-UID:220cf0cc-d794-48da-8585-b12509fcbcb2-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261105T060541Z
+UID:977debff-4c51-40ee-95a2-74a421f075b6-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261106T060007Z
 DTSTART:20261106T100000Z
 DTEND:20261106T120000Z
 SUMMARY:TİCARİ REKLAMLARA YÖNELİK SON UYUM KURALLARI DEĞERLENDİRME PANELİ
@@ -16,8 +16,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/ticari-reklamlara-yonelik-son-uyum
 LOCATION:Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:7f673466-cc6c-4da5-a9a5-c8511c05e0a4-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261105T060541Z
+UID:4e3d57a6-a3f3-4ca5-865f-2052b1ebeebf-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261106T060007Z
 DTSTART:20261113T070000Z
 DTEND:20261113T090000Z
 SUMMARY:REKABET HUKUKUNDA İDARİ PARA CEZALARI
@@ -26,8 +26,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/rekabet-hukukunda-idari-para-cezal
 LOCATION:Zoom Üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:4aab7901-bc54-4233-b6e5-a76636ae45bd-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261105T060541Z
+UID:353601b5-cf85-47d8-8b1a-969e4a4e93fe-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261106T060007Z
 DTSTART:20261114T060000Z
 DTEND:20261114T080000Z
 SUMMARY:TÜKETİCİ HUKUKU TEMEL EĞİTİMİ
@@ -36,8 +36,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/tuketici-hukuku-temel-egitimi-1
 LOCATION:Zoom Üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:4aab7901-bc54-4233-b6e5-a76636ae45bd-gun1@istanbulbarosu.org.tr
-DTSTAMP:20261105T060541Z
+UID:353601b5-cf85-47d8-8b1a-969e4a4e93fe-gun1@istanbulbarosu.org.tr
+DTSTAMP:20261106T060007Z
 DTSTART:20261115T060000Z
 DTEND:20261115T080000Z
 SUMMARY:TÜKETİCİ HUKUKU TEMEL EĞİTİMİ
@@ -46,8 +46,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/tuketici-hukuku-temel-egitimi-1
 LOCATION:Zoom Üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:49c5b919-9445-497d-b1c4-4de852d6cd5b-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261105T060541Z
+UID:f25a54ee-d54d-4717-96eb-989a717d285c-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261106T060007Z
 DTSTART:20261114T090000Z
 DTEND:20261114T110000Z
 SUMMARY:İSTANBUL MODERN SANAT MÜZESİ SEMİHA BERKSOY SERGİSİ
@@ -56,8 +56,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/istanbul-modern-sanat-muzesi-semih
 LOCATION:İstanbul Modern SAnat Müzesi
 END:VEVENT
 BEGIN:VEVENT
-UID:456e71c8-1b92-48ca-8975-dba7733b88a8-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261105T060541Z
+UID:d20aadc3-5ebf-41bd-92d7-dfc2eff5b177-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261106T060007Z
 DTSTART:20261122T100000Z
 DTEND:20261122T120000Z
 SUMMARY:15. DÖNEM RESİM KURSLARI 22 KASIM 2026 TARİHİNDE BAŞLIYOR
@@ -66,8 +66,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/15-donem-resim-kurslari-22-kasim-2
 LOCATION:Baro Kültür Merkezi
 END:VEVENT
 BEGIN:VEVENT
-UID:de3ec6bf-7aa1-4560-bc37-e28046d20cd5-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261105T060541Z
+UID:884cd466-a412-4347-9513-15270dfa31e9-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261106T060007Z
 DTSTART:20261127T160000Z
 DTEND:20261127T180000Z
 SUMMARY:KADININ SESİ: DEYİŞLER\, TÜRKÜLER VE ŞARKILARLA
