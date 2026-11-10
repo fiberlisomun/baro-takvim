@@ -6,8 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:İstanbul Barosu Etkinlikleri
 X-WR-TIMEZONE:Europe/Istanbul
 BEGIN:VEVENT
-UID:851b655c-aafd-44ef-9e5e-5d36e810401b-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261109T054336Z
+UID:c220bd2b-5e85-4927-b82b-d3c2f6838210-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261110T065144Z
 DTSTART:20261106T100000Z
 DTEND:20261106T120000Z
 SUMMARY:TİCARİ REKLAMLARA YÖNELİK SON UYUM KURALLARI DEĞERLENDİRME PANELİ
@@ -16,8 +16,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/ticari-reklamlara-yonelik-son-uyum
 LOCATION:Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:c5b19353-3883-4227-b24a-d46842fa76ca-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261109T054336Z
+UID:b58064cd-2275-4866-8a50-1f96066945c5-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261110T065144Z
 DTSTART:20261112T150000Z
 DTEND:20261112T170000Z
 SUMMARY:SERMAYE PİYASASI MEVZUATI KAPSAMINDA YATIRIM FONLARINDA GÜNCEL GELİŞMELER
@@ -26,8 +26,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/sermaye-piyasasi-mevzuati-kapsamin
 LOCATION:Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:987e3e78-1e4d-4583-afea-084829c18705-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261109T054336Z
+UID:18b859ec-67cd-429a-983e-4206b514854a-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261110T065144Z
 DTSTART:20261113T070000Z
 DTEND:20261113T090000Z
 SUMMARY:REKABET HUKUKUNDA İDARİ PARA CEZALARI
@@ -36,8 +36,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/rekabet-hukukunda-idari-para-cezal
 LOCATION:Zoom Üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:54046bed-946f-4b5c-85b9-7c0afed06d83-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261109T054336Z
+UID:70b9176d-3c9d-4a3f-a9ce-1eb9d8441937-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261110T065144Z
 DTSTART:20261114T060000Z
 DTEND:20261114T080000Z
 SUMMARY:TÜKETİCİ HUKUKU TEMEL EĞİTİMİ
@@ -46,8 +46,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/tuketici-hukuku-temel-egitimi-1
 LOCATION:Zoom Üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:54046bed-946f-4b5c-85b9-7c0afed06d83-gun1@istanbulbarosu.org.tr
-DTSTAMP:20261109T054336Z
+UID:70b9176d-3c9d-4a3f-a9ce-1eb9d8441937-gun1@istanbulbarosu.org.tr
+DTSTAMP:20261110T065144Z
 DTSTART:20261115T060000Z
 DTEND:20261115T080000Z
 SUMMARY:TÜKETİCİ HUKUKU TEMEL EĞİTİMİ
@@ -56,8 +56,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/tuketici-hukuku-temel-egitimi-1
 LOCATION:Zoom Üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:e0d3d531-8036-4e7f-a47f-c5ea915de5cb-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261109T054336Z
+UID:0d240b31-87a8-43fd-bfb3-f79248020129-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261110T065144Z
 DTSTART:20261114T090000Z
 DTEND:20261114T110000Z
 SUMMARY:İSTANBUL MODERN SANAT MÜZESİ SEMİHA BERKSOY SERGİSİ
@@ -66,8 +66,18 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/istanbul-modern-sanat-muzesi-semih
 LOCATION:İstanbul Modern SAnat Müzesi
 END:VEVENT
 BEGIN:VEVENT
-UID:7b828428-e363-4e65-95b6-c20ac2956304-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261109T054336Z
+UID:266d84f8-0433-460e-82aa-d3973bec9963-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261110T065144Z
+DTSTART:20261119T160000Z
+DTEND:20261119T180000Z
+SUMMARY:GÖÇ SORUNUNDAN İFADE ÖZGÜRLÜĞÜNE
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/goc-sorunundan-ifade-ozgurlugune
+URL:https://istanbulbarosu.org.tr/etkinlikler/goc-sorunundan-ifade-ozgurlugune
+LOCATION:İstanbul Barosu 6. Kat Toplantı Salonu
+END:VEVENT
+BEGIN:VEVENT
+UID:3a39610f-949b-4a35-bf10-4bedff9d6884-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261110T065144Z
 DTSTART:20261122T100000Z
 DTEND:20261122T120000Z
 SUMMARY:15. DÖNEM RESİM KURSLARI 22 KASIM 2026 TARİHİNDE BAŞLIYOR
@@ -76,8 +86,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/15-donem-resim-kurslari-22-kasim-2
 LOCATION:Baro Kültür Merkezi
 END:VEVENT
 BEGIN:VEVENT
-UID:fc0ea928-2529-4ea1-8325-41c8044f1b2a-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261109T054336Z
+UID:b71da619-f7d3-4442-8d41-616c8cb46477-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261110T065144Z
 DTSTART:20261127T160000Z
 DTEND:20261127T180000Z
 SUMMARY:KADININ SESİ: DEYİŞLER\, TÜRKÜLER VE ŞARKILARLA
