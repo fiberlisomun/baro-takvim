@@ -6,8 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:İstanbul Barosu Etkinlikleri
 X-WR-TIMEZONE:Europe/Istanbul
 BEGIN:VEVENT
-UID:b2f6dc14-f15d-41f6-9354-a629c3eb00d1-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:a2c3eea7-b1c1-4486-abca-11dccd1e5601-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261106T100000Z
 DTEND:20261106T120000Z
 SUMMARY:TİCARİ REKLAMLARA YÖNELİK SON UYUM KURALLARI DEĞERLENDİRME PANELİ
@@ -16,8 +16,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/ticari-reklamlara-yonelik-son-uyum
 LOCATION:Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:3a86bcf5-478f-44e6-8e9b-b963f7f0e8f4-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:a0b9a1e3-e64a-4999-94fb-b7222fa27858-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261112T150000Z
 DTEND:20261112T170000Z
 SUMMARY:SERMAYE PİYASASI MEVZUATI KAPSAMINDA YATIRIM FONLARINDA GÜNCEL GELİŞMELER
@@ -26,8 +26,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/sermaye-piyasasi-mevzuati-kapsamin
 LOCATION:Av. Orhan Adli Apaydın Konferans Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:9429e2c7-c5f1-44e9-add1-1f63fe14d6c1-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:2e3c54ec-177c-443d-8035-53d329d9904b-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261113T070000Z
 DTEND:20261113T090000Z
 SUMMARY:REKABET HUKUKUNDA İDARİ PARA CEZALARI
@@ -36,8 +36,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/rekabet-hukukunda-idari-para-cezal
 LOCATION:Zoom Üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:579d7378-24e9-4daa-aa5a-ca0a8bb8624e-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:19af3749-4d13-4586-ac0f-e94b53f56ef2-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261114T060000Z
 DTEND:20261114T080000Z
 SUMMARY:TÜKETİCİ HUKUKU TEMEL EĞİTİMİ
@@ -46,8 +46,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/tuketici-hukuku-temel-egitimi-1
 LOCATION:Zoom Üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:579d7378-24e9-4daa-aa5a-ca0a8bb8624e-gun1@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:19af3749-4d13-4586-ac0f-e94b53f56ef2-gun1@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261115T060000Z
 DTEND:20261115T080000Z
 SUMMARY:TÜKETİCİ HUKUKU TEMEL EĞİTİMİ
@@ -56,8 +56,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/tuketici-hukuku-temel-egitimi-1
 LOCATION:Zoom Üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:ac2fe30b-2cbe-433b-9b4f-0e84cca6db35-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:2fb22497-f531-40db-b2c6-1317dd77cb94-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261114T090000Z
 DTEND:20261114T110000Z
 SUMMARY:İSTANBUL MODERN SANAT MÜZESİ SEMİHA BERKSOY SERGİSİ
@@ -66,8 +66,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/istanbul-modern-sanat-muzesi-semih
 LOCATION:İstanbul Modern SAnat Müzesi
 END:VEVENT
 BEGIN:VEVENT
-UID:dfe4c957-4448-4052-9a08-8756f60b4406-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:1f3af297-2f10-4f00-bbc9-ce38ded0f3c8-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261119T160000Z
 DTEND:20261119T180000Z
 SUMMARY:GÖÇ SORUNUNDAN İFADE ÖZGÜRLÜĞÜNE
@@ -76,8 +76,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/goc-sorunundan-ifade-ozgurlugune
 LOCATION:İstanbul Barosu 6. Kat Toplantı Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:43ee71ed-2cc6-47c1-a0f3-0eff8ef8a7de-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:04fadf70-cc1c-4f07-a08c-578b7653d772-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261119T163000Z
 DTEND:20261119T183000Z
 SUMMARY:HUKUK VE EDEBİYAT TEMALI KİTAP DEĞERLENDİRME ETKİNLİĞİ
@@ -86,8 +86,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/hukuk-ve-edebiyat-temali-kitap-deg
 LOCATION:İstanbul Barosu CMK Binası 1.Kat
 END:VEVENT
 BEGIN:VEVENT
-UID:7130b988-1e62-4fa4-a56f-ab842edd2251-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:d1d76d03-79cc-4117-a5cf-39ab9b10f25a-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261120T160000Z
 DTEND:20261120T180000Z
 SUMMARY:SİGORTA HUKUKUNDA BEDENSEL ZARARLARIN TAZMİNİ
@@ -96,8 +96,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/sigorta-hukukunda-bedensel-zararla
 LOCATION:İstanbul Barosu Kültür Merkezi
 END:VEVENT
 BEGIN:VEVENT
-UID:d066c61c-eed0-4c7d-bffc-88811b884f94-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:df0592a5-cb5a-477a-b0ba-7b5598e726a1-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261121T064500Z
 DTEND:20261121T084500Z
 SUMMARY:REKABET HUKUKU TEMEL EĞİTİMİ
@@ -106,8 +106,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/rekabet-hukuku-temel-egitimi
 LOCATION:Zoom üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:d066c61c-eed0-4c7d-bffc-88811b884f94-gun1@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:df0592a5-cb5a-477a-b0ba-7b5598e726a1-gun1@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261122T064500Z
 DTEND:20261122T084500Z
 SUMMARY:REKABET HUKUKU TEMEL EĞİTİMİ
@@ -116,8 +116,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/rekabet-hukuku-temel-egitimi
 LOCATION:Zoom üzerinden Çevrimiçi
 END:VEVENT
 BEGIN:VEVENT
-UID:5f7cffc2-e032-4847-b52c-b506b5725100-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:101a6189-a07b-484b-85ba-bff6643cb415-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261122T100000Z
 DTEND:20261122T120000Z
 SUMMARY:15. DÖNEM RESİM KURSLARI 22 KASIM 2026 TARİHİNDE BAŞLIYOR
@@ -126,8 +126,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/15-donem-resim-kurslari-22-kasim-2
 LOCATION:Baro Kültür Merkezi
 END:VEVENT
 BEGIN:VEVENT
-UID:19ba3c46-f650-459f-95f7-ede9cc1761d6-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:eec145d7-4c53-4e89-8de6-379fb59b5168-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261123T160000Z
 DTEND:20261123T180000Z
 SUMMARY:20 KASIM DÜNYA ÇOCUK HAKLARI GÜNÜNDE ÇOCUK HAKLARINI BİRLİKTE DÜŞÜNMEK
@@ -136,8 +136,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/20-kasim-dunya-cocuk-haklari-gunun
 LOCATION:İstanbul BArosu 6. Kat Toplantı Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:1884caf9-c636-4771-9707-a2a47533a9c4-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:c7d1b7d0-8524-4be8-b759-0a62c255e2af-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261124T070000Z
 DTEND:20261124T090000Z
 SUMMARY:PROF. DR. M. İLHAN ULUSAN ONURUNA MEDENİ HUKUK SEMPOZYUMU
@@ -146,18 +146,27 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/prof-dr-m-ilhan-ulusan-onuruna-med
 LOCATION:İstanbul Kültür Üniversitesi BAhçelievler Yerleşkesi Şirinevler Binası Hukuk Fakültesi 6. Kat İkiz Salon
 END:VEVENT
 BEGIN:VEVENT
-UID:b5f425b2-d597-4ea0-9b29-9eb9e3abfedb-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
-DTSTART:20261126T140000Z
-DTEND:20261126T160000Z
+UID:a70e1e99-89e7-47a4-ad45-1a5027f79546-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
+DTSTART:20261126T130000Z
+DTEND:20261126T150000Z
 SUMMARY:ADİ ORTAKLIK TASFİYESİ
 DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/adi-ortaklik-tasfiyesi
 URL:https://istanbulbarosu.org.tr/etkinlikler/adi-ortaklik-tasfiyesi
 LOCATION:İstanbul Barosu 6. Kat Toplantı Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:8797cb28-ccc6-42c4-9861-fd45a2d0a285-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:a59e8f38-4bb4-4c39-a918-83f8a96377a2-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
+DTSTART:20261126T210000Z
+DTEND:20261126T230000Z
+SUMMARY:MISIR GEZİSİ
+DESCRIPTION:Detaylar için tıklayın: https://istanbulbarosu.org.tr/etkinlikler/misir-gezisi
+URL:https://istanbulbarosu.org.tr/etkinlikler/misir-gezisi
+END:VEVENT
+BEGIN:VEVENT
+UID:f67f0bdd-d384-4d1b-ab83-41d3ab4c6d83-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261127T120000Z
 DTEND:20261127T140000Z
 SUMMARY:DENİZ HUKUKU UZMANI ÜSTATLARA SAYGI
@@ -166,8 +175,8 @@ URL:https://istanbulbarosu.org.tr/etkinlikler/deniz-hukuku-uzmani-ustatlara-sayg
 LOCATION:Av. Orhan Adli Apaydın Toplantı Salonu
 END:VEVENT
 BEGIN:VEVENT
-UID:c2dc2c08-ebe3-46de-9f7e-9cd4bf3c3bfc-gun0@istanbulbarosu.org.tr
-DTSTAMP:20261120T064503Z
+UID:27e56fea-62c7-4b41-9623-38f563abfc1f-gun0@istanbulbarosu.org.tr
+DTSTAMP:20261121T063830Z
 DTSTART:20261127T160000Z
 DTEND:20261127T180000Z
 SUMMARY:KADININ SESİ: DEYİŞLER\, TÜRKÜLER VE ŞARKILARLA
